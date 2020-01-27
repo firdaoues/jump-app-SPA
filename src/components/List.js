@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Tab, Row, Col, ListGroup } from "react-bootstrap";
 import users from "../helpers/fake-data/User";
+import Details from "../components/Details";
 
 export default class List extends Component {
   constructor(props) {
@@ -50,6 +51,12 @@ export default class List extends Component {
             <Col sm={2}> </Col>
           </Row>
         </Tab.Container>
+
+        <Details
+          name={this.state.firstName}
+          last={this.state.lastName}
+          addr={this.state.addresse}
+        />
       </div>
     );
   }
