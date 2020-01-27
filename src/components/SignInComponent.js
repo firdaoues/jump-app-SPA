@@ -28,7 +28,7 @@ export default function SignIn({ loginUsername, loginPassword }) {
         status = true;
       }
     });
-    if (status == true) history.push("/home");
+    if (status === true) history.push("/home");
     else alert.error("username or passeword is incorrect");
   };
 
