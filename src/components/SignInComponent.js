@@ -14,7 +14,7 @@ import auth from "../helpers/fake-data/Auth";
 
 export default function SignIn({ loginUsername, loginPassword }) {
   const classes = useStyles();
-  const alert = useAlert();
+  //const alert = useAlert();
   let history = useHistory();
 
   const [username, setUsername] = useState(loginUsername);
@@ -29,7 +29,7 @@ export default function SignIn({ loginUsername, loginPassword }) {
       }
     });
     if (status === true) history.push("/home");
-    else alert.error("username or passeword is incorrect");
+    //else alert.error("username or passeword is incorrect");
   };
 
   return (
